@@ -123,7 +123,7 @@ The [image viewer](https://docs.juncture-digital.org/components/image-viewer) wi
 
 **Example**
 
-<ve-snippet collapsible caption="Example">
+<ve-snippet>
 `image wc:Sunflower_sky_backdrop.jpg right`
 </ve-snippet>
   
