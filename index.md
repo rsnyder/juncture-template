@@ -82,9 +82,9 @@ The [image viewer](https://docs.juncture-digital.org/components/image-viewer) wi
 
 `image wc:Sunflower_sky_backdrop.jpg right`
 
-*Attributes*
+**Attributes**
 
-- *src* (_string_): something about src
+- **src** (_string_): something about src
 - *caption*: something about caption
 - *fit*: something about caption
 - *fit*: something about caption
