@@ -54,27 +54,39 @@ The [iframe](https://docs.juncture-digital.org/components/iframe-viewer) tag all
 
 ### Image Compare Viewer
 
-Lorem ipsum odor amet, consectetuer adipiscing elit. Aenean pulvinar proin consequat neque eleifend pharetra facilisis litora. Ornare magnis cubilia cras aenean torquent lacinia curabitur. Quisque porttitor tristique donec senectus ridiculus nascetur. Tempor luctus tristique cras posuere lectus. Amet conubia aptent; eu vivamus sapien posuere sodales velit netus. Etiam sem phasellus netus vulputate dui lacinia felis. Finibus donec porta eleifend porta imperdiet faucibus condimentum. Felis malesuada phasellus porttitor habitasse facilisi rhoncus urna.
+The [image-compare](https://docs.juncture-digital.org/components/image-compare-viewer) creates a viewer that is able to display 2 high-resolution in a stacked compare viewer.
 
-More information can be found [here](https://docs.juncture-digital.org/components/image-compare-viewer).
+```
+compare caption="Comparison of Van Gogh Sketch and Painting"
+wc:Vincent_van_Gogh_-_Vincent's_Bedroom_in_Arles_-_Letter_Sketch_October_1888.jpg
+wc:Vincent_van_Gogh’s_famous_painting,_digitally_enhanced_by_rawpixel-com_49.jpg
+```
 
 ### Image Gallery
 
-Lorem ipsum odor amet, consectetuer adipiscing elit. Aenean pulvinar proin consequat neque eleifend pharetra facilisis litora. Ornare magnis cubilia cras aenean torquent lacinia curabitur. Quisque porttitor tristique donec senectus ridiculus nascetur. Tempor luctus tristique cras posuere lectus. Amet conubia aptent; eu vivamus sapien posuere sodales velit netus. Etiam sem phasellus netus vulputate dui lacinia felis. Finibus donec porta eleifend porta imperdiet faucibus condimentum. Felis malesuada phasellus porttitor habitasse facilisi rhoncus urna.
+The [gallery](https://docs.juncture-digital.org/components/image-gallery) displays an arbitrary number of image thumbnails in a grid. By default only the thumbnail is displayed. An image caption cah be shown using the show-caption boolean attribute. When the thumbnail is clicked, the full image is shown in a popup window.
 
-More information can be found [here](https://docs.juncture-digital.org/components/image-gallery).
+```
+gallery
+wc:Atrani_(Costiera_Amalfitana,_23-8-2011).jpg
+wc:Costiera-amalfitana-_panorama_from_the_sea_129.jpg
+wc:Amalfi_Coast_(247891371).jpeg
+wc:Amalfi_Coast_(Italy,_October_2020)_-_73_(50557616528).jpg
+wc:Amalfi_Coast_(Italy,_October_2020)_-_72_(50558479917).jpg
+wc:Amalfi_Coast_(Italy,_October_2020)_-_14_(50558382446).jpg
+```
 
 ### Image Viewer
 
-Lorem ipsum odor amet, consectetuer adipiscing elit. Aenean pulvinar proin consequat neque eleifend pharetra facilisis litora. Ornare magnis cubilia cras aenean torquent lacinia curabitur. Quisque porttitor tristique donec senectus ridiculus nascetur. Tempor luctus tristique cras posuere lectus. Amet conubia aptent; eu vivamus sapien posuere sodales velit netus. Etiam sem phasellus netus vulputate dui lacinia felis. Finibus donec porta eleifend porta imperdiet faucibus condimentum. Felis malesuada phasellus porttitor habitasse facilisi rhoncus urna.
+The [image viewer](https://docs.juncture-digital.org/components/image-viewer) will render a high-resolution image with full interactivity (deep-zoom and panning) enabled.
 
-More information can be found [here](https://docs.juncture-digital.org/components/image-viewer).
+`image wc:Sunflower_sky_backdrop.jpg left`
 
 ### Map Viewer
 
-Lorem ipsum odor amet, consectetuer adipiscing elit. Aenean pulvinar proin consequat neque eleifend pharetra facilisis litora. Ornare magnis cubilia cras aenean torquent lacinia curabitur. Quisque porttitor tristique donec senectus ridiculus nascetur. Tempor luctus tristique cras posuere lectus. Amet conubia aptent; eu vivamus sapien posuere sodales velit netus. Etiam sem phasellus netus vulputate dui lacinia felis. Finibus donec porta eleifend porta imperdiet faucibus condimentum. Felis malesuada phasellus porttitor habitasse facilisi rhoncus urna.
+The [map viewer](https://docs.juncture-digital.org/components/map-viewer) creates a map viewer that displays a base map with optional map layers. The map viewer supports zooming and panning. 
 
-More information can be found [here](https://docs.juncture-digital.org/components/map-viewer).
+`map left`
 
 ### Mermaid Diagram Viewer
 
