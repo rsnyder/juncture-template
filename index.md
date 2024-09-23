@@ -108,12 +108,20 @@ The [image viewer](https://docs.juncture-digital.org/components/image-viewer) wi
 
 `image wc:Sunflower_sky_backdrop.jpg right`
 
-**Attributes**
+**Tag attributes**
 
-- **src** (_string_): something about src
-- **caption** (_string_): something about caption
+- **src** (_string_, _positional_): something about src
+- **caption** (_string_, _positional_): something about caption
 - **fit** (_string_): something about fit
 - **cover** (_boolean_): something about boolean
+
+**List attributes**
+
+- *src*
+- *caption*
+- *cover*
+
+**Example**
 
 ```markdown
 `image wc:Sunflower_sky_backdrop.jpg right`
