@@ -90,24 +90,61 @@ The [map viewer](https://docs.juncture-digital.org/components/map-viewer) create
 
 ### Mermaid Diagram Viewer
 
-Lorem ipsum odor amet, consectetuer adipiscing elit. Aenean pulvinar proin consequat neque eleifend pharetra facilisis litora. Ornare magnis cubilia cras aenean torquent lacinia curabitur. Quisque porttitor tristique donec senectus ridiculus nascetur. Tempor luctus tristique cras posuere lectus. Amet conubia aptent; eu vivamus sapien posuere sodales velit netus. Etiam sem phasellus netus vulputate dui lacinia felis. Finibus donec porta eleifend porta imperdiet faucibus condimentum. Felis malesuada phasellus porttitor habitasse facilisi rhoncus urna.
+The [mermaid diagram viewer](https://docs.juncture-digital.org/components/mermaid-diagram-viewer) uses the Mermaid.js JavaScript library to create diagram visualizations. With this tag, you can create charts and diagrams with Markdown-inspired text definitions used by Mermaid. This page will show you the different diagram types supported by Mermaid that you can include in your visual essay.
 
-More information can be found [here](https://docs.juncture-digital.org/components/mermaid-diagram-viewer).
+```
+mermaid
+mindmap
+  root((mindmap))
+    Origins
+      Long history
+      ::icon(fa fa-book)
+      Popularisation
+        British popular psychology author Tony Buzan
+    Research
+      On effectiveness<br/>and features
+      On Automatic creation
+        Uses
+            Creative techniques
+            Strategic planning
+            Argument mapping
+    Tools
+      Pen and paper
+      Mermaid
+```
 
 ### Plant Specimen Viewer
 
-Lorem ipsum odor amet, consectetuer adipiscing elit. Aenean pulvinar proin consequat neque eleifend pharetra facilisis litora. Ornare magnis cubilia cras aenean torquent lacinia curabitur. Quisque porttitor tristique donec senectus ridiculus nascetur. Tempor luctus tristique cras posuere lectus. Amet conubia aptent; eu vivamus sapien posuere sodales velit netus. Etiam sem phasellus netus vulputate dui lacinia felis. Finibus donec porta eleifend porta imperdiet faucibus condimentum. Felis malesuada phasellus porttitor habitasse facilisi rhoncus urna.
+The [plant specimen viewer](https://docs.juncture-digital.org/components/plant-specimen-viewer) is used to display one or more plant specimens obtained from JSTOR Global Plants. The component is a wrapper for the .ve-media viewer which is used to display the high-resolution specimen images.
 
-More information can be found [here](https://docs.juncture-digital.org/components/plant-specimen-viewer).
+`plant-specimen Q11575`
 
 ### Video Player
 
-Lorem ipsum odor amet, consectetuer adipiscing elit. Aenean pulvinar proin consequat neque eleifend pharetra facilisis litora. Ornare magnis cubilia cras aenean torquent lacinia curabitur. Quisque porttitor tristique donec senectus ridiculus nascetur. Tempor luctus tristique cras posuere lectus. Amet conubia aptent; eu vivamus sapien posuere sodales velit netus. Etiam sem phasellus netus vulputate dui lacinia felis. Finibus donec porta eleifend porta imperdiet faucibus condimentum. Felis malesuada phasellus porttitor habitasse facilisi rhoncus urna.
+The [video player](https://docs.juncture-digital.org/components/video-player) creates a viewer that is able to play video content, including streaming video from YouTube and Vimeo.
 
-More information can be found [here](https://docs.juncture-digital.org/components/video-player).
+`video Zy3K2Lcw7hQ`
 
 ### VisJS Diagram Viewer
 
-Lorem ipsum odor amet, consectetuer adipiscing elit. Aenean pulvinar proin consequat neque eleifend pharetra facilisis litora. Ornare magnis cubilia cras aenean torquent lacinia curabitur. Quisque porttitor tristique donec senectus ridiculus nascetur. Tempor luctus tristique cras posuere lectus. Amet conubia aptent; eu vivamus sapien posuere sodales velit netus. Etiam sem phasellus netus vulputate dui lacinia felis. Finibus donec porta eleifend porta imperdiet faucibus condimentum. Felis malesuada phasellus porttitor habitasse facilisi rhoncus urna.
+he [visjs diagram viewer](https://docs.juncture-digital.org/components/visjs-diagram-viewer) uses the vis.js JavaScript library to create diagram visualizations. With this tag, you can create network, timeline, and other types of diagrams.
 
-More information can be found [here](https://docs.juncture-digital.org/components/visjs-diagram-viewer).
+|id |     label     |
+|---|---------------|
+| 1 | Node 1        |
+| 2 | Node 2        |
+| 3 | Node 3        |
+| 4 | Node 4        |
+| 5 | Node 5        |
+`#nodes`
+
+|from|to |
+|----|---|
+| 1 | 3  |
+| 1 | 2  |
+| 2 | 4  |
+| 2 | 5  |
+| 3 | 3  |
+`#edges`
+
+`visjs edges=edges nodes=nodes caption="VisJS Network" left`
