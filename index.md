@@ -2,11 +2,11 @@
   .section3 ul strong { color: red; }
 </style>
 
-# juncture
-
-## Markdown
+# Juncture Cheat Sheat
 
 ## Juncture tagging
+
+Juncture extends the Markdown language with tags for adding viewer components to the generated web page.
 
 ## Juncture components
 
@@ -89,27 +89,9 @@ The [image viewer](https://docs.juncture-digital.org/components/image-viewer) wi
 **Attributes**
 
 - **src** (_string_): something about src
-- *caption*: something about caption
-- *fit*: something about caption
-- *fit*: something about caption
-- *fit*: something about caption
-- *fit*: something about caption
-- *fit*: something about caption
-- *fit*: something about caption
-- *fit*: something about caption
-- *fit*: something about caption
-- *fit*: something about caption
-- *fit*: something about caption
-- *fit*: something about caption
-- *fit*: something about caption
-- *fit*: something about caption
-- *fit*: something about caption
-- *fit*: something about caption
-- *fit*: something about caption
-- *fit*: something about caption
-- *fit*: something about caption
-- *fit*: something about caption
-- *fit*: something about caption
+- **caption** (_string_): something about caption
+- **fit** (_string_): something about fit
+- **cover** (_boolean_): something about boolean
   
 ### Map Viewer
 
