@@ -171,5 +171,3 @@ he [visjs diagram viewer](https://docs.juncture-digital.org/components/visjs-dia
 | 2 | 5  |
 | 3 | 3  |
 `#edges`
-
-`visjs edges=edges nodes=nodes caption="VisJS Network" left`
