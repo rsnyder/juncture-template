@@ -48,9 +48,9 @@ carousel navigation left fit=cover
 
 ### IFrame Viewer
 
-Lorem ipsum odor amet, consectetuer adipiscing elit. Aenean pulvinar proin consequat neque eleifend pharetra facilisis litora. Ornare magnis cubilia cras aenean torquent lacinia curabitur. Quisque porttitor tristique donec senectus ridiculus nascetur. Tempor luctus tristique cras posuere lectus. Amet conubia aptent; eu vivamus sapien posuere sodales velit netus. Etiam sem phasellus netus vulputate dui lacinia felis. Finibus donec porta eleifend porta imperdiet faucibus condimentum. Felis malesuada phasellus porttitor habitasse facilisi rhoncus urna.
+The [iframe](https://docs.juncture-digital.org/components/iframe-viewer) tag allows arbitrary web pages to be embedded in an essay. The Juncture iframe viewer is a light wrapper around the standard HTML iframe that is used to embed another document within the current HTML document.
 
-More information can be found [here](https://docs.juncture-digital.org/components/iframe-viewer).
+`iframe https://archive.org/embed/slaveryinunit00ballcha/page/172/mode/1up left`
 
 ### Image Compare Viewer
 
