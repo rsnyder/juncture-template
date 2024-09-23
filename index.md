@@ -23,20 +23,20 @@
 
 The [animated-image](https://docs.juncture-digital.org/components/animated-image-viewer) tag creates a viewer that is able to play animated GIFs.
 
-`animated-image https://upload.wikimedia.org/wikipedia/commons/e/e3/Animhorse.gif .left`
+`animated-image https://upload.wikimedia.org/wikipedia/commons/e/e3/Animhorse.gif left`
 
 ### Audio Player
 
 The [audio](https://docs.juncture-digital.org/components/audio-player) tag creates a viewer that is able to play audio content.
 
-`audio wc:Interview_with_Warren_Hanson_regarding_Hundred_Flowers.ogg caption="Interview with Warren Hanson regarding Hundred Flowers" .left`
+`audio wc:Interview_with_Warren_Hanson_regarding_Hundred_Flowers.ogg caption="Interview with Warren Hanson regarding Hundred Flowers" left`
 
 ### Image Carousel
 
 The [carousel](https://docs.juncture-digital.org/components/image-carousel) displays an arbitrary number of images along a horizontal or vertical axis.  The carousel is a Juncture wrapper for the [Shoelace](https://shoelace.style/) [sl-carousel](https://shoelace.style/components/carousel) component.
 
 ```
-carousel navigation .right
+carousel navigation left fit=cover
 - wc:Atrani_(Costiera_Amalfitana,_23-8-2011).jpg
 - wc:Amalfi_Coast_Italy_6.JPG
 - wc:Costiera-amalfitana-_panorama_from_the_sea_129.jpg
