@@ -33,10 +33,10 @@ The [audio](https://docs.juncture-digital.org/components/audio-player) tag creat
 
 ### Image Carousel
 
-The [carousel](https://docs.juncture-digital.org/components/image-carousel) displays an arbitrary number of images along a horizontal or vertical axis.  The `carousel` is a Juncture wrapper for the [Shoelace](https://shoelace.style/) [sl-carousel](https://shoelace.style/components/carousel) component.
+The [carousel](https://docs.juncture-digital.org/components/image-carousel) displays an arbitrary number of images along a horizontal or vertical axis.  The carousel is a Juncture wrapper for the [Shoelace](https://shoelace.style/) [sl-carousel](https://shoelace.style/components/carousel) component.
 
 ```
-carousel navigation
+carousel navigation .right
 - wc:Atrani_(Costiera_Amalfitana,_23-8-2011).jpg
 - wc:Amalfi_Coast_Italy_6.JPG
 - wc:Costiera-amalfitana-_panorama_from_the_sea_129.jpg
