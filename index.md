@@ -117,7 +117,7 @@ mindmap
 
 The [plant specimen viewer](https://docs.juncture-digital.org/components/plant-specimen-viewer) is used to display one or more plant specimens obtained from JSTOR Global Plants. The component is a wrapper for the .ve-media viewer which is used to display the high-resolution specimen images.
 
-`plant-specimen Q11575`
+`plant-specimen Q11575 left`
 
 ### Video Player
 
