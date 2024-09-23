@@ -1,3 +1,7 @@
+<style>
+  .section3 ul strong { color: red; }
+</style>
+
 # juncture
 
 ## Markdown
