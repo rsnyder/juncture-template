@@ -92,6 +92,10 @@ The [image viewer](https://docs.juncture-digital.org/components/image-viewer) wi
 - **caption** (_string_): something about caption
 - **fit** (_string_): something about fit
 - **cover** (_boolean_): something about boolean
+
+```markdown
+`image wc:Sunflower_sky_backdrop.jpg right`
+```
   
 ### Map Viewer
 
