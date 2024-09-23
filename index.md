@@ -21,42 +21,30 @@
 
 ### Animated Image Viewer
 
-The `animated-image` tag creates a viewer that is able to play animated GIFs.
+The [animated-image](https://docs.juncture-digital.org/components/animated-image-viewer) tag creates a viewer that is able to play animated GIFs.
 
-<ve-snippet collapsible label="Animated Image Example">
-    `animated-image https://upload.wikimedia.org/wikipedia/commons/e/e3/Animhorse.gif`
-</ve-snippet>
-
-[For more information](https://docs.juncture-digital.org/components/animated-image-viewer).
+`animated-image https://upload.wikimedia.org/wikipedia/commons/e/e3/Animhorse.gif .left`
 
 ### Audio Player
 
-The `audio` tag creates a viewer that is able to play audio content.
+The [audio](https://docs.juncture-digital.org/components/audio-player) tag creates a viewer that is able to play audio content.
 
-<ve-snippet collapsible label="Audio Player Example">
-    `audio wc:Interview_with_Warren_Hanson_regarding_Hundred_Flowers.ogg caption="Interview with Warren Hanson regarding Hundred Flowers"`
-</ve-snippet>
-
-[For more information](https://docs.juncture-digital.org/components/audio-player).
+`audio wc:Interview_with_Warren_Hanson_regarding_Hundred_Flowers.ogg caption="Interview with Warren Hanson regarding Hundred Flowers" .left`
 
 ### Image Carousel
 
-The `carousel` displays an arbitrary number of images along a horizontal or vertical axis.  The `carousel` is a Juncture wrapper for the [Shoelace](https://shoelace.style/) [sl-carousel](https://shoelace.style/components/carousel) component.
+The [carousel](https://docs.juncture-digital.org/components/image-carousel) displays an arbitrary number of images along a horizontal or vertical axis.  The `carousel` is a Juncture wrapper for the [Shoelace](https://shoelace.style/) [sl-carousel](https://shoelace.style/components/carousel) component.
 
-<ve-snippet collapsible label="Image Carousel Example">
-    ```
-    carousel navigation
-    - wc:Atrani_(Costiera_Amalfitana,_23-8-2011).jpg
-    - wc:Amalfi_Coast_Italy_6.JPG
-    - wc:Costiera-amalfitana-_panorama_from_the_sea_129.jpg
-    - wc:Amalfi_Coast_(247891371).jpeg
-    - wc:Amalfi_Coast_(Italy,_October_2020)_-_73_(50557616528).jpg
-    - wc:Amalfi_Coast_(Italy,_October_2020)_-_72_(50558479917).jpg
-    - wc:Amalfi_Coast_(Italy,_October_2020)_-_14_(50558382446).jpg
-    ```
-</ve-snippet>
-
-[For more information](https://docs.juncture-digital.org/components/image-carousel).
+```
+carousel navigation
+- wc:Atrani_(Costiera_Amalfitana,_23-8-2011).jpg
+- wc:Amalfi_Coast_Italy_6.JPG
+- wc:Costiera-amalfitana-_panorama_from_the_sea_129.jpg
+- wc:Amalfi_Coast_(247891371).jpeg
+- wc:Amalfi_Coast_(Italy,_October_2020)_-_73_(50557616528).jpg
+- wc:Amalfi_Coast_(Italy,_October_2020)_-_72_(50558479917).jpg
+- wc:Amalfi_Coast_(Italy,_October_2020)_-_14_(50558382446).jpg
+```
 
 ### IFrame Viewer
 
