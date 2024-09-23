@@ -70,14 +70,36 @@ wc:Vincent_van_Gogh’s_famous_painting,_digitally_enhanced_by_rawpixel-com_49.j
 
 The [gallery](https://docs.juncture-digital.org/components/image-gallery) displays an arbitrary number of image thumbnails in a grid. By default only the thumbnail is displayed. An image caption cah be shown using the show-caption boolean attribute. When the thumbnail is clicked, the full image is shown in a popup window.
 
-```
-gallery left
-wc:Atrani_(Costiera_Amalfitana,_23-8-2011).jpg
-wc:Costiera-amalfitana-_panorama_from_the_sea_129.jpg
-wc:Amalfi_Coast_(247891371).jpeg
-wc:Amalfi_Coast_(Italy,_October_2020)_-_73_(50557616528).jpg
-wc:Amalfi_Coast_(Italy,_October_2020)_-_72_(50558479917).jpg
-wc:Amalfi_Coast_(Italy,_October_2020)_-_14_(50558382446).jpg
+`gallery right`
+- wc:Atrani_(Costiera_Amalfitana,_23-8-2011).jpg
+- wc:Costiera-amalfitana-_panorama_from_the_sea_129.jpg
+- wc:Amalfi_Coast_(247891371).jpeg
+- wc:Amalfi_Coast_(Italy,_October_2020)_-_73_(50557616528).jpg
+- wc:Amalfi_Coast_(Italy,_October_2020)_-_72_(50558479917).jpg
+- wc:Amalfi_Coast_(Italy,_October_2020)_-_14_(50558382446).jpg
+
+**Attributes**
+
+- **src** (_string_): something about src
+- **caption** (_string_): something about caption
+- **fit** (_string_): something about fit
+- **cover** (_boolean_): something about boolean
+
+**List Options**
+
+- **src** (_string_): something about src
+- **caption** (_string_): something about caption
+- **fit** (_string_): something about fit
+- **cover** (_boolean_): something about boolean
+
+```markdown
+`gallery right`
+- wc:Atrani_(Costiera_Amalfitana,_23-8-2011).jpg
+- wc:Costiera-amalfitana-_panorama_from_the_sea_129.jpg
+- wc:Amalfi_Coast_(247891371).jpeg
+- wc:Amalfi_Coast_(Italy,_October_2020)_-_73_(50557616528).jpg
+- wc:Amalfi_Coast_(Italy,_October_2020)_-_72_(50558479917).jpg
+- wc:Amalfi_Coast_(Italy,_October_2020)_-_14_(50558382446).jpg
 ```
 
 ### Image Viewer
