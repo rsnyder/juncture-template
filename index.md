@@ -123,9 +123,9 @@ The [image viewer](https://docs.juncture-digital.org/components/image-viewer) wi
 
 **Example**
 
-```markdown
+<ve-snippet collapsible caption="Example">
 `image wc:Sunflower_sky_backdrop.jpg right`
-```
+</ve-snippet>
   
 ### Map Viewer
 
