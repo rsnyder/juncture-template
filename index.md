@@ -80,8 +80,33 @@ wc:Amalfi_Coast_(Italy,_October_2020)_-_14_(50558382446).jpg
 
 The [image viewer](https://docs.juncture-digital.org/components/image-viewer) will render a high-resolution image with full interactivity (deep-zoom and panning) enabled.
 
-`image wc:Sunflower_sky_backdrop.jpg left`
+`image wc:Sunflower_sky_backdrop.jpg right`
 
+#### Attributes
+
+- *src*: something about src
+- *caption*: something about caption
+- *fit*: something about caption
+- *fit*: something about caption
+- *fit*: something about caption
+- *fit*: something about caption
+- *fit*: something about caption
+- *fit*: something about caption
+- *fit*: something about caption
+- *fit*: something about caption
+- *fit*: something about caption
+- *fit*: something about caption
+- *fit*: something about caption
+- *fit*: something about caption
+- *fit*: something about caption
+- *fit*: something about caption
+- *fit*: something about caption
+- *fit*: something about caption
+- *fit*: something about caption
+- *fit*: something about caption
+- *fit*: something about caption
+- *fit*: something about caption
+  
 ### Map Viewer
 
 The [map viewer](https://docs.juncture-digital.org/components/map-viewer) creates a map viewer that displays a base map with optional map layers. The map viewer supports zooming and panning. 
