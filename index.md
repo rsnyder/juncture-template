@@ -57,7 +57,7 @@ The [iframe](https://docs.juncture-digital.org/components/iframe-viewer) tag all
 The [image-compare](https://docs.juncture-digital.org/components/image-compare-viewer) creates a viewer that is able to display 2 high-resolution in a stacked compare viewer.
 
 ```
-compare caption="Comparison of Van Gogh Sketch and Painting"
+compare caption="Comparison of Van Gogh Sketch and Painting" left
 wc:Vincent_van_Gogh_-_Vincent's_Bedroom_in_Arles_-_Letter_Sketch_October_1888.jpg
 wc:Vincent_van_Gogh’s_famous_painting,_digitally_enhanced_by_rawpixel-com_49.jpg
 ```
@@ -67,7 +67,7 @@ wc:Vincent_van_Gogh’s_famous_painting,_digitally_enhanced_by_rawpixel-com_49.j
 The [gallery](https://docs.juncture-digital.org/components/image-gallery) displays an arbitrary number of image thumbnails in a grid. By default only the thumbnail is displayed. An image caption cah be shown using the show-caption boolean attribute. When the thumbnail is clicked, the full image is shown in a popup window.
 
 ```
-gallery
+gallery left
 wc:Atrani_(Costiera_Amalfitana,_23-8-2011).jpg
 wc:Costiera-amalfitana-_panorama_from_the_sea_129.jpg
 wc:Amalfi_Coast_(247891371).jpeg
@@ -93,7 +93,7 @@ The [map viewer](https://docs.juncture-digital.org/components/map-viewer) create
 The [mermaid diagram viewer](https://docs.juncture-digital.org/components/mermaid-diagram-viewer) uses the Mermaid.js JavaScript library to create diagram visualizations. With this tag, you can create charts and diagrams with Markdown-inspired text definitions used by Mermaid. This page will show you the different diagram types supported by Mermaid that you can include in your visual essay.
 
 ```
-mermaid
+mermaid left
 mindmap
   root((mindmap))
     Origins
@@ -123,7 +123,7 @@ The [plant specimen viewer](https://docs.juncture-digital.org/components/plant-s
 
 The [video player](https://docs.juncture-digital.org/components/video-player) creates a viewer that is able to play video content, including streaming video from YouTube and Vimeo.
 
-`video Zy3K2Lcw7hQ`
+`video Zy3K2Lcw7hQ left`
 
 ### VisJS Diagram Viewer
 
