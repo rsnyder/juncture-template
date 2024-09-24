@@ -294,7 +294,7 @@ The `video` tag creates a viewer that is able to play video content, including s
 
 #####
  
-<ve-snippet collapsible label="Example">
+<ve-snippet collapsible label="Click to view example">
 `video Zy3K2Lcw7hQ`
 </ve-snippet>
 
