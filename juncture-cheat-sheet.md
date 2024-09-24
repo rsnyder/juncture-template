@@ -1,5 +1,6 @@
 <style>
-  .section3 ul strong { color: red; }
+	h3 { font-size: 2em !important; color: #5A162E; }
+	.section3 ul strong { color: red; }
 </style>
 
 # Juncture Cheat Sheat
