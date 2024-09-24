@@ -23,24 +23,63 @@ Juncture extends the Markdown language with tags for adding viewer components to
 - [Video Player](#video-player)
 - [VisJS Diagram Viewer](#visjs-diagram-viewer)
 
-### Animated Image Viewer
+### Animated Image Viewer 
 
 The [animated-image](https://docs.juncture-digital.org/components/animated-image-viewer) tag creates a viewer that is able to play animated GIFs.
 
-`animated-image https://upload.wikimedia.org/wikipedia/commons/e/e3/Animhorse.gif left`
+####
+`.mcol`
+
+#####
+
+**Attributes**
+
+- **src** (_string_): something about src
+- **caption** (_string_): something about caption
+
+**Attributes List**
+
+- **src** (_string_): something about src
+
+#####
+
+<ve-snippet>
+`animated-image https://upload.wikimedia.org/wikipedia/commons/e/e3/Animhorse.gif`
+</ve-snippet>
 
 ### Audio Player
 
 The [audio](https://docs.juncture-digital.org/components/audio-player) tag creates a viewer that is able to play audio content.
 
-`audio wc:Interview_with_Warren_Hanson_regarding_Hundred_Flowers.ogg caption="Interview with Warren Hanson regarding Hundred Flowers" left`
+####
+`.mcol`
+
+#####
+
+**Attributes**
+
+ #####
+ 
+ <ve-snippet>
+`audio wc:Interview_with_Warren_Hanson_regarding_Hundred_Flowers.ogg caption="Interview with Warren Hanson regarding Hundred Flowers"`
+ </ve-snippet>
 
 ### Image Carousel
 
 The [carousel](https://docs.juncture-digital.org/components/image-carousel) displays an arbitrary number of images along a horizontal or vertical axis.  The carousel is a Juncture wrapper for the [Shoelace](https://shoelace.style/) [sl-carousel](https://shoelace.style/components/carousel) component.
 
+####
+`.mcol`
+
+#####
+
+**Attributes**
+
+#####
+ 
+ <ve-snippet>
 ```
-carousel navigation left fit=cover
+carousel navigation fit=cover
 - wc:Atrani_(Costiera_Amalfitana,_23-8-2011).jpg
 - wc:Amalfi_Coast_Italy_6.JPG
 - wc:Costiera-amalfitana-_panorama_from_the_sea_129.jpg
@@ -49,34 +88,54 @@ carousel navigation left fit=cover
 - wc:Amalfi_Coast_(Italy,_October_2020)_-_72_(50558479917).jpg
 - wc:Amalfi_Coast_(Italy,_October_2020)_-_14_(50558382446).jpg
 ```
+</ve-snippet>
 
 ### IFrame Viewer
 
 The [iframe](https://docs.juncture-digital.org/components/iframe-viewer) tag allows arbitrary web pages to be embedded in an essay. The Juncture iframe viewer is a light wrapper around the standard HTML iframe that is used to embed another document within the current HTML document.
 
-`iframe https://archive.org/embed/slaveryinunit00ballcha/page/172/mode/1up left`
+####
+`.mcol`
+
+#####
+
+**Attributes**
+
+#####
+ 
+ <ve-snippet>
+`iframe https://archive.org/embed/slaveryinunit00ballcha/page/172/mode/1up`
+</ve-snippet>
 
 ### Image Compare Viewer
 
 The [image-compare](https://docs.juncture-digital.org/components/image-compare-viewer) creates a viewer that is able to display 2 high-resolution in a stacked compare viewer.
 
+####
+`.mcol`
+
+#####
+
+**Attributes**
+
+#####
+ 
+ <ve-snippet>
 ```
-compare caption="Comparison of Van Gogh Sketch and Painting" left
+compare caption="Comparison of Van Gogh Sketch and Painting"
 wc:Vincent_van_Gogh_-_Vincent's_Bedroom_in_Arles_-_Letter_Sketch_October_1888.jpg
 wc:Vincent_van_Gogh’s_famous_painting,_digitally_enhanced_by_rawpixel-com_49.jpg
 ```
+</ve-snippet>
 
 ### Image Gallery
 
 The [gallery](https://docs.juncture-digital.org/components/image-gallery) displays an arbitrary number of image thumbnails in a grid. By default only the thumbnail is displayed. An image caption cah be shown using the show-caption boolean attribute. When the thumbnail is clicked, the full image is shown in a popup window.
 
-`gallery right`
-- wc:Atrani_(Costiera_Amalfitana,_23-8-2011).jpg
-- wc:Costiera-amalfitana-_panorama_from_the_sea_129.jpg
-- wc:Amalfi_Coast_(247891371).jpeg
-- wc:Amalfi_Coast_(Italy,_October_2020)_-_73_(50557616528).jpg
-- wc:Amalfi_Coast_(Italy,_October_2020)_-_72_(50558479917).jpg
-- wc:Amalfi_Coast_(Italy,_October_2020)_-_14_(50558382446).jpg
+####
+`.mcol`
+
+#####
 
 **Attributes**
 
@@ -92,21 +151,26 @@ The [gallery](https://docs.juncture-digital.org/components/image-gallery) displa
 - **fit** (_string_): something about fit
 - **cover** (_boolean_): something about boolean
 
-```markdown
-`gallery right`
+#####
+ 
+ <ve-snippet>
+`gallery`
 - wc:Atrani_(Costiera_Amalfitana,_23-8-2011).jpg
 - wc:Costiera-amalfitana-_panorama_from_the_sea_129.jpg
 - wc:Amalfi_Coast_(247891371).jpeg
 - wc:Amalfi_Coast_(Italy,_October_2020)_-_73_(50557616528).jpg
 - wc:Amalfi_Coast_(Italy,_October_2020)_-_72_(50558479917).jpg
 - wc:Amalfi_Coast_(Italy,_October_2020)_-_14_(50558382446).jpg
-```
+</ve-snippet>
 
 ### Image Viewer
 
 The [image viewer](https://docs.juncture-digital.org/components/image-viewer) will render a high-resolution image with full interactivity (deep-zoom and panning) enabled.
 
-`image wc:Sunflower_sky_backdrop.jpg right`
+####
+`.mcol`
+
+#####
 
 **Tag attributes**
 
@@ -121,24 +185,45 @@ The [image viewer](https://docs.juncture-digital.org/components/image-viewer) wi
 - *caption*
 - *cover*
 
-**Example**
-
-<ve-snippet>
-`image wc:Sunflower_sky_backdrop.jpg right`
+#####
+ 
+ <ve-snippet>
+`image wc:Sunflower_sky_backdrop.jpg`
 </ve-snippet>
   
 ### Map Viewer
 
 The [map viewer](https://docs.juncture-digital.org/components/map-viewer) creates a map viewer that displays a base map with optional map layers. The map viewer supports zooming and panning. 
 
-`map left`
+####
+`.mcol`
+
+#####
+
+**Attributes**
+
+#####
+ 
+ <ve-snippet>
+`map`
+</ve-snippet>
 
 ### Mermaid Diagram Viewer
 
 The [mermaid diagram viewer](https://docs.juncture-digital.org/components/mermaid-diagram-viewer) uses the Mermaid.js JavaScript library to create diagram visualizations. With this tag, you can create charts and diagrams with Markdown-inspired text definitions used by Mermaid. This page will show you the different diagram types supported by Mermaid that you can include in your visual essay.
 
+####
+`.mcol`
+
+#####
+
+**Attributes**
+
+#####
+ 
+ <ve-snippet>
 ```
-mermaid left
+mermaid
 mindmap
   root((mindmap))
     Origins
@@ -157,23 +242,56 @@ mindmap
       Pen and paper
       Mermaid
 ```
+</ve-snippet>
 
 ### Plant Specimen Viewer
 
 The [plant specimen viewer](https://docs.juncture-digital.org/components/plant-specimen-viewer) is used to display one or more plant specimens obtained from JSTOR Global Plants. The component is a wrapper for the .ve-media viewer which is used to display the high-resolution specimen images.
 
-`plant-specimen Q11575 left`
+####
+`.mcol`
+
+#####
+
+**Attributes**
+
+#####
+ 
+ <ve-snippet>
+`plant-specimen Q11575`
+</ve-snippet>
 
 ### Video Player
 
 The [video player](https://docs.juncture-digital.org/components/video-player) creates a viewer that is able to play video content, including streaming video from YouTube and Vimeo.
 
-`video Zy3K2Lcw7hQ left`
+####
+`.mcol`
+
+#####
+
+**Attributes**
+
+#####
+ 
+ <ve-snippet>
+`video Zy3K2Lcw7hQ`
+</ve-snippet>
 
 ### VisJS Diagram Viewer
 
 he [visjs diagram viewer](https://docs.juncture-digital.org/components/visjs-diagram-viewer) uses the vis.js JavaScript library to create diagram visualizations. With this tag, you can create network, timeline, and other types of diagrams.
 
+####
+`.mcol`
+
+#####
+
+**Attributes**
+
+#####
+ 
+ <ve-snippet>
 |id |     label     |
 |---|---------------|
 | 1 | Node 1        |
@@ -191,3 +309,4 @@ he [visjs diagram viewer](https://docs.juncture-digital.org/components/visjs-dia
 | 2 | 5  |
 | 3 | 3  |
 `#edges`
+</ve-snippet>
