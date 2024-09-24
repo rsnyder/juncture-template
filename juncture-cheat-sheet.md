@@ -25,7 +25,7 @@ Juncture extends the Markdown language with tags for adding viewer components to
 
 ### Animated Image Viewer 
 
-The [animated-image](https://docs.juncture-digital.org/components/animated-image-viewer) tag creates a viewer that is able to play animated GIFs.
+The `animated-image` tag creates a viewer that is able to play animated GIFs.
 
 ####
 `.mcol`
@@ -43,13 +43,15 @@ The [animated-image](https://docs.juncture-digital.org/components/animated-image
 
 #####
 
-<ve-snippet collapsible label="Example">
+<ve-snippet collapsible label="Click to view example">
 `animated-image https://upload.wikimedia.org/wikipedia/commons/e/e3/Animhorse.gif`
 </ve-snippet>
 
+For more examples visit the [animated-image documentation page](https://docs.juncture-digital.org/components/animated-image-viewer).
+
 ### Audio Player
 
-The [audio](https://docs.juncture-digital.org/components/audio-player) tag creates a viewer that is able to play audio content.
+The `audio` tag creates a viewer that is able to play audio content.
 
 ####
 `.mcol`
@@ -60,13 +62,15 @@ The [audio](https://docs.juncture-digital.org/components/audio-player) tag creat
 
  #####
  
-<ve-snippet collapsible label="Example">
+<ve-snippet collapsible label="Click to view example">
 `audio wc:Interview_with_Warren_Hanson_regarding_Hundred_Flowers.ogg caption="Interview with Warren Hanson regarding Hundred Flowers"`
  </ve-snippet>
+ 
+For more examples visit the [audio documentation page](https://docs.juncture-digital.org/components/audio-player).
 
 ### Image Carousel
 
-The [carousel](https://docs.juncture-digital.org/components/image-carousel) displays an arbitrary number of images along a horizontal or vertical axis.  The carousel is a Juncture wrapper for the [Shoelace](https://shoelace.style/) [sl-carousel](https://shoelace.style/components/carousel) component.
+The `carousel` tag displays an arbitrary number of images along a horizontal or vertical axis.  The carousel is a Juncture wrapper for the [Shoelace](https://shoelace.style/) [sl-carousel](https://shoelace.style/components/carousel) component.
 
 ####
 `.mcol`
@@ -77,7 +81,7 @@ The [carousel](https://docs.juncture-digital.org/components/image-carousel) disp
 
 #####
  
-<ve-snippet collapsible label="Example">
+<ve-snippet collapsible label="Click to view example">
 ```
 carousel navigation fit=cover
 - wc:Atrani_(Costiera_Amalfitana,_23-8-2011).jpg
@@ -90,9 +94,11 @@ carousel navigation fit=cover
 ```
 </ve-snippet>
 
+For more examples visit the [carousel documentation page](https://docs.juncture-digital.org/components/image-carousel).
+
 ### IFrame Viewer
 
-The [iframe](https://docs.juncture-digital.org/components/iframe-viewer) tag allows arbitrary web pages to be embedded in an essay. The Juncture iframe viewer is a light wrapper around the standard HTML iframe that is used to embed another document within the current HTML document.
+The `iframe` tag allows arbitrary web pages to be embedded in an essay. The Juncture iframe viewer is a light wrapper around the standard HTML iframe that is used to embed another document within the current HTML document.
 
 ####
 `.mcol`
@@ -103,13 +109,15 @@ The [iframe](https://docs.juncture-digital.org/components/iframe-viewer) tag all
 
 #####
  
-<ve-snippet collapsible label="Example">
+<ve-snippet collapsible label="Click to view example">
 `iframe https://archive.org/embed/slaveryinunit00ballcha/page/172/mode/1up`
 </ve-snippet>
 
+For more examples visit the [iframe documentation page](https://docs.juncture-digital.org/components/iframe-viewer).
+
 ### Image Compare Viewer
 
-The [image-compare](https://docs.juncture-digital.org/components/image-compare-viewer) creates a viewer that is able to display 2 high-resolution in a stacked compare viewer.
+The `image-compare` tag creates a viewer that is able to display 2 high-resolution in a stacked compare viewer.
 
 ####
 `.mcol`
@@ -120,7 +128,7 @@ The [image-compare](https://docs.juncture-digital.org/components/image-compare-v
 
 #####
  
-<ve-snippet collapsible label="Example">
+<ve-snippet collapsible label="Click to view example">
 ```
 compare caption="Comparison of Van Gogh Sketch and Painting"
 wc:Vincent_van_Gogh_-_Vincent's_Bedroom_in_Arles_-_Letter_Sketch_October_1888.jpg
@@ -128,9 +136,11 @@ wc:Vincent_van_Gogh’s_famous_painting,_digitally_enhanced_by_rawpixel-com_49.j
 ```
 </ve-snippet>
 
+For more examples visit the [image-compare documentation page](https://docs.juncture-digital.org/components/image-compare-viewer).
+
 ### Image Gallery
 
-The [gallery](https://docs.juncture-digital.org/components/image-gallery) displays an arbitrary number of image thumbnails in a grid. By default only the thumbnail is displayed. An image caption cah be shown using the show-caption boolean attribute. When the thumbnail is clicked, the full image is shown in a popup window.
+The `gallery` tag displays an arbitrary number of image thumbnails in a grid. By default only the thumbnail is displayed. An image caption cah be shown using the show-caption boolean attribute. When the thumbnail is clicked, the full image is shown in a popup window.
 
 ####
 `.mcol`
@@ -153,7 +163,7 @@ The [gallery](https://docs.juncture-digital.org/components/image-gallery) displa
 
 #####
  
-<ve-snippet collapsible label="Example">
+<ve-snippet collapsible label="Click to view example">
 `gallery`
 - wc:Atrani_(Costiera_Amalfitana,_23-8-2011).jpg
 - wc:Costiera-amalfitana-_panorama_from_the_sea_129.jpg
@@ -163,9 +173,11 @@ The [gallery](https://docs.juncture-digital.org/components/image-gallery) displa
 - wc:Amalfi_Coast_(Italy,_October_2020)_-_14_(50558382446).jpg
 </ve-snippet>
 
+For more examples visit the [gallery documentation page](https://docs.juncture-digital.org/components/image-gallery).
+
 ### Image Viewer
 
-The [image viewer](https://docs.juncture-digital.org/components/image-viewer) will render a high-resolution image with full interactivity (deep-zoom and panning) enabled.
+The `image` tag will render a high-resolution image with full interactivity (deep-zoom and panning) enabled.
 
 ####
 `.mcol`
@@ -187,13 +199,15 @@ The [image viewer](https://docs.juncture-digital.org/components/image-viewer) wi
 
 #####
  
-<ve-snippet collapsible label="Example">
+<ve-snippet collapsible label="Click to view example">
 `image wc:Sunflower_sky_backdrop.jpg`
 </ve-snippet>
+
+For more examples visit the [image documentation page](https://docs.juncture-digital.org/components/image-viewer).
   
 ### Map Viewer
 
-The [map viewer](https://docs.juncture-digital.org/components/map-viewer) creates a map viewer that displays a base map with optional map layers. The map viewer supports zooming and panning. 
+The `map` tagcreates a map viewer that displays a base map with optional map layers. The map viewer supports zooming and panning. 
 
 ####
 `.mcol`
@@ -204,13 +218,15 @@ The [map viewer](https://docs.juncture-digital.org/components/map-viewer) create
 
 #####
  
-<ve-snippet collapsible label="Example">
+<ve-snippet collapsible label="Click to view example">
 `map`
 </ve-snippet>
 
+For more examples visit the [map documentation page](https://docs.juncture-digital.org/components/map-viewer).
+
 ### Mermaid Diagram Viewer
 
-The [mermaid diagram viewer](https://docs.juncture-digital.org/components/mermaid-diagram-viewer) uses the Mermaid.js JavaScript library to create diagram visualizations. With this tag, you can create charts and diagrams with Markdown-inspired text definitions used by Mermaid. This page will show you the different diagram types supported by Mermaid that you can include in your visual essay.
+The `mermaid` tag uses the [mermaid.js](https://mermaid.js.org/intro/) JavaScript library to create diagram visualizations. With this tag, you can create charts and diagrams with Markdown-inspired text definitions used by Mermaid. This page will show you the different diagram types supported by Mermaid that you can include in your visual essay.
 
 ####
 `.mcol`
@@ -221,7 +237,7 @@ The [mermaid diagram viewer](https://docs.juncture-digital.org/components/mermai
 
 #####
  
-<ve-snippet collapsible label="Example">
+<ve-snippet collapsible label="Click to view example">
 ```
 mermaid
 mindmap
@@ -244,9 +260,11 @@ mindmap
 ```
 </ve-snippet>
 
+For more examples visit the [mermaid documentation page](https://docs.juncture-digital.org/components/mermaid-diagram-viewer).
+
 ### Plant Specimen Viewer
 
-The [plant specimen viewer](https://docs.juncture-digital.org/components/plant-specimen-viewer) is used to display one or more plant specimens obtained from JSTOR Global Plants. The component is a wrapper for the .ve-media viewer which is used to display the high-resolution specimen images.
+The `plant-specimen` tag is used to display one or more plant specimens obtained from JSTOR Global Plants. The component is a wrapper for the .ve-media viewer which is used to display the high-resolution specimen images.
 
 ####
 `.mcol`
@@ -257,13 +275,15 @@ The [plant specimen viewer](https://docs.juncture-digital.org/components/plant-s
 
 #####
  
-<ve-snippet collapsible label="Example">
+<ve-snippet collapsible label="Click to view example">
 `plant-specimen Q11575`
 </ve-snippet>
 
+For more examples visit the [plant-specimen documentation page](https://docs.juncture-digital.org/components/plant-specimen-viewer).
+
 ### Video Player
 
-The [video player](https://docs.juncture-digital.org/components/video-player) creates a viewer that is able to play video content, including streaming video from YouTube and Vimeo.
+The `video` tag creates a viewer that is able to play video content, including streaming video from YouTube and Vimeo.
 
 ####
 `.mcol`
@@ -278,9 +298,11 @@ The [video player](https://docs.juncture-digital.org/components/video-player) cr
 `video Zy3K2Lcw7hQ`
 </ve-snippet>
 
+For more examples visit the [video documentation page](https://docs.juncture-digital.org/components/video-player).
+
 ### VisJS Diagram Viewer
 
-he [visjs diagram viewer](https://docs.juncture-digital.org/components/visjs-diagram-viewer) uses the vis.js JavaScript library to create diagram visualizations. With this tag, you can create network, timeline, and other types of diagrams.
+The `visjs` tag uses the [vis.js](https://visjs.org/) JavaScript library to create diagram visualizations. With this tag, you can create network, timeline, and other types of diagrams.
 
 ####
 `.mcol`
@@ -291,7 +313,7 @@ he [visjs diagram viewer](https://docs.juncture-digital.org/components/visjs-dia
 
 #####
  
-<ve-snippet collapsible label="Example">
+<ve-snippet collapsible label="Click to view example">
 |id |     label     |
 |---|---------------|
 | 1 | Node 1        |
@@ -310,3 +332,5 @@ he [visjs diagram viewer](https://docs.juncture-digital.org/components/visjs-dia
 | 3 | 3  |
 `#edges`
 </ve-snippet>
+
+For more examples visit the [visjs documentation page](https://docs.juncture-digital.org/components/visjs-diagram-viewer).
