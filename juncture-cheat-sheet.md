@@ -43,7 +43,7 @@ The [animated-image](https://docs.juncture-digital.org/components/animated-image
 
 #####
 
-<ve-snippet>
+<ve-snippet collapsible label="Example">
 `animated-image https://upload.wikimedia.org/wikipedia/commons/e/e3/Animhorse.gif`
 </ve-snippet>
 
@@ -60,7 +60,7 @@ The [audio](https://docs.juncture-digital.org/components/audio-player) tag creat
 
  #####
  
- <ve-snippet>
+<ve-snippet collapsible label="Example">
 `audio wc:Interview_with_Warren_Hanson_regarding_Hundred_Flowers.ogg caption="Interview with Warren Hanson regarding Hundred Flowers"`
  </ve-snippet>
 
@@ -77,7 +77,7 @@ The [carousel](https://docs.juncture-digital.org/components/image-carousel) disp
 
 #####
  
- <ve-snippet>
+<ve-snippet collapsible label="Example">
 ```
 carousel navigation fit=cover
 - wc:Atrani_(Costiera_Amalfitana,_23-8-2011).jpg
@@ -103,7 +103,7 @@ The [iframe](https://docs.juncture-digital.org/components/iframe-viewer) tag all
 
 #####
  
- <ve-snippet>
+<ve-snippet collapsible label="Example">
 `iframe https://archive.org/embed/slaveryinunit00ballcha/page/172/mode/1up`
 </ve-snippet>
 
@@ -120,7 +120,7 @@ The [image-compare](https://docs.juncture-digital.org/components/image-compare-v
 
 #####
  
- <ve-snippet>
+<ve-snippet collapsible label="Example">
 ```
 compare caption="Comparison of Van Gogh Sketch and Painting"
 wc:Vincent_van_Gogh_-_Vincent's_Bedroom_in_Arles_-_Letter_Sketch_October_1888.jpg
@@ -153,7 +153,7 @@ The [gallery](https://docs.juncture-digital.org/components/image-gallery) displa
 
 #####
  
- <ve-snippet>
+<ve-snippet collapsible label="Example">
 `gallery`
 - wc:Atrani_(Costiera_Amalfitana,_23-8-2011).jpg
 - wc:Costiera-amalfitana-_panorama_from_the_sea_129.jpg
@@ -187,7 +187,7 @@ The [image viewer](https://docs.juncture-digital.org/components/image-viewer) wi
 
 #####
  
- <ve-snippet>
+<ve-snippet collapsible label="Example">
 `image wc:Sunflower_sky_backdrop.jpg`
 </ve-snippet>
   
@@ -204,7 +204,7 @@ The [map viewer](https://docs.juncture-digital.org/components/map-viewer) create
 
 #####
  
- <ve-snippet>
+<ve-snippet collapsible label="Example">
 `map`
 </ve-snippet>
 
@@ -221,7 +221,7 @@ The [mermaid diagram viewer](https://docs.juncture-digital.org/components/mermai
 
 #####
  
- <ve-snippet>
+<ve-snippet collapsible label="Example">
 ```
 mermaid
 mindmap
@@ -257,7 +257,7 @@ The [plant specimen viewer](https://docs.juncture-digital.org/components/plant-s
 
 #####
  
- <ve-snippet>
+<ve-snippet collapsible label="Example">
 `plant-specimen Q11575`
 </ve-snippet>
 
@@ -274,7 +274,7 @@ The [video player](https://docs.juncture-digital.org/components/video-player) cr
 
 #####
  
- <ve-snippet>
+<ve-snippet collapsible label="Example">
 `video Zy3K2Lcw7hQ`
 </ve-snippet>
 
@@ -291,7 +291,7 @@ he [visjs diagram viewer](https://docs.juncture-digital.org/components/visjs-dia
 
 #####
  
- <ve-snippet>
+<ve-snippet collapsible label="Example">
 |id |     label     |
 |---|---------------|
 | 1 | Node 1        |
