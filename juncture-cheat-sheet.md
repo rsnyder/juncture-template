@@ -32,18 +32,17 @@ The `animated-image` tag creates a viewer that is able to play animated GIFs.
 
 #####
 
-**Attributes**
+**Tag Attributes**
 
-- **src** (_string_): something about src
-- **caption** (_string_): something about caption
-
-**Attributes List**
-
-- **src** (_string_): something about src
+- **src** (_string_): The URL to the animated GIF image.  Wikimedia Commons short form URLs are supported.
+- **caption** (_string_): Defines the text to use for a caption that is displayed below the image.
+- **autoplay** (_boolean_): Automatically play animation when viewer is displayed.
 
 #####
 
-<ve-snippet collapsible label="Click to view example">
+**Examples**
+
+<ve-snippet collapsible label="Click to view basic example">
 `animated-image https://upload.wikimedia.org/wikipedia/commons/e/e3/Animhorse.gif`
 </ve-snippet>
 
@@ -58,10 +57,16 @@ The `audio` tag creates a viewer that is able to play audio content.
 
 #####
 
-**Attributes**
+**Tag Attributes**
 
- #####
- 
+- **src** (_string_): The URL to the animated GIF image.  Wikimedia Commons short form URLs are supported.
+- **caption** (_string_): Defines the text to use for a caption that is displayed below the image.
+- **autoplay** (_boolean_): Automatically play animation when viewer is displayed.
+
+#####
+
+**Examples**
+
 <ve-snippet collapsible label="Click to view example">
 `audio wc:Interview_with_Warren_Hanson_regarding_Hundred_Flowers.ogg caption="Interview with Warren Hanson regarding Hundred Flowers"`
  </ve-snippet>
@@ -77,10 +82,14 @@ The `carousel` tag displays an arbitrary number of images along a horizontal or 
 
 #####
 
-**Attributes**
+**Tag Attributes**
+
+**Images List**
 
 #####
- 
+
+**Examples**
+
 <ve-snippet collapsible label="Click to view example">
 ```
 carousel navigation fit=cover
@@ -105,9 +114,11 @@ The `iframe` tag allows arbitrary web pages to be embedded in an essay. The Junc
 
 #####
 
-**Attributes**
+**Tag Attributes**
 
 #####
+
+**Examples**
  
 <ve-snippet collapsible label="Click to view example">
 `iframe https://archive.org/embed/slaveryinunit00ballcha/page/172/mode/1up`
@@ -124,9 +135,13 @@ The `image-compare` tag creates a viewer that is able to display 2 high-resoluti
 
 #####
 
-**Attributes**
+**Tag Attributes**
+
+**Images List**
 
 #####
+
+**Examples**
  
 <ve-snippet collapsible label="Click to view example">
 ```
@@ -147,14 +162,14 @@ The `gallery` tag displays an arbitrary number of image thumbnails in a grid. By
 
 #####
 
-**Attributes**
+**Tag Attributes**
 
 - **src** (_string_): something about src
 - **caption** (_string_): something about caption
 - **fit** (_string_): something about fit
 - **cover** (_boolean_): something about boolean
 
-**List Options**
+**Images List**
 
 - **src** (_string_): something about src
 - **caption** (_string_): something about caption
@@ -162,7 +177,9 @@ The `gallery` tag displays an arbitrary number of image thumbnails in a grid. By
 - **cover** (_boolean_): something about boolean
 
 #####
- 
+
+**Examples**
+
 <ve-snippet collapsible label="Click to view example">
 `gallery`
 - wc:Atrani_(Costiera_Amalfitana,_23-8-2011).jpg
@@ -191,14 +208,16 @@ The `image` tag will render a high-resolution image with full interactivity (dee
 - **fit** (_string_): something about fit
 - **cover** (_boolean_): something about boolean
 
-**List attributes**
+**Images List**
 
 - *src*
 - *caption*
 - *cover*
 
 #####
- 
+
+**Examples**
+
 <ve-snippet collapsible label="Click to view example">
 `image wc:Sunflower_sky_backdrop.jpg`
 </ve-snippet>
@@ -214,10 +233,14 @@ The `map` tagcreates a map viewer that displays a base map with optional map lay
 
 #####
 
-**Attributes**
+**Tag attributes**
+
+**Layers List**
 
 #####
- 
+
+**Examples**
+
 <ve-snippet collapsible label="Click to view example">
 `map`
 </ve-snippet>
@@ -233,10 +256,12 @@ The `mermaid` tag uses the [mermaid.js](https://mermaid.js.org/intro/) JavaScrip
 
 #####
 
-**Attributes**
+**Tag attributes**
 
 #####
- 
+
+**Examples**
+
 <ve-snippet collapsible label="Click to view example">
 ```
 mermaid
@@ -271,10 +296,12 @@ The `plant-specimen` tag is used to display one or more plant specimens obtained
 
 #####
 
-**Attributes**
+**Tag attributes**
 
 #####
- 
+
+**Examples**
+
 <ve-snippet collapsible label="Click to view example">
 `plant-specimen Q11575`
 </ve-snippet>
@@ -290,10 +317,12 @@ The `video` tag creates a viewer that is able to play video content, including s
 
 #####
 
-**Attributes**
+**Tag attributes**
 
 #####
- 
+
+**Examples**
+
 <ve-snippet collapsible label="Click to view example">
 `video Zy3K2Lcw7hQ`
 </ve-snippet>
@@ -309,10 +338,12 @@ The `visjs` tag uses the [vis.js](https://visjs.org/) JavaScript library to crea
 
 #####
 
-**Attributes**
+**Tag attributes**
 
 #####
- 
+
+**Examples**
+
 <ve-snippet collapsible label="Click to view example">
 |id |     label     |
 |---|---------------|
