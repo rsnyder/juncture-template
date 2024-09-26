@@ -1,3 +1,5 @@
+[![](https://v3.juncture-digital.org/images/wb.svg)](https://v3.juncture-digital.org/wb)
+
 <style>
 	h3 { font-size: 2em !important; color: #5A162E; }
 	.section3 ul strong { color: red; }
