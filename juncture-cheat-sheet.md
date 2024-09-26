@@ -364,7 +364,7 @@ For more examples visit the [image documentation page](https://docs.juncture-dig
   
 ### Map Viewer
 
-The `map` tagcreates a map viewer that displays a base map with optional map layers. The map viewer supports zooming and panning. 
+The `map` tag creates a map viewer that displays a base map with optional map layers. The map viewer supports zooming and panning. 
 
 ####
 `.mcol`
@@ -373,7 +373,48 @@ The `map` tagcreates a map viewer that displays a base map with optional map lay
 
 **Tag attributes**
 
+- **location** (_string_):  Comma-separated values for latitude, longitude and an optional zoom level.  A Wikidata QID may be used in place of the latitude and longitude coordinates.
+- **basemaps** (_string_):  The names of optional base maps to be used.  Multiple base map names are comma separated.  A list of supported base maps can be seen [here](/components/basemaps)
+- **caption** (_string_):  A caption to use in the viewer caption bar.
+- **center** (_string_):  Defines the initial center of the rendered map.  This can be defined using latitude and longitude coordinates or with a Wikidata QID.
+- **marker** (_boolean_):  If true a Marker will be added to the map center point.
+- **popup-on-hover** (_boolean_):  Show location popup when hovering over the location (marker pin or GeoJSON shape).  The default behavior is to show the popup when clicking on the location.
+- **prefer-geojson** (_boolean_):  Display a GeoJSON shape rather than a pin marker when available.
+- **scroll-wheel-zoom** (_boolean_):  Enable map zoom behavior when scrolling over a map.  This is disabled be default.
+- **zoom** (_number_):  Defines the initial zoom level of the rendered map.
+- **zoom-on-click** (_boolean_):  Increase zoom level on a location after clicking on a location marker pin or shape. 
+
 **Layers List**
+
+The base map can be augmented with one or more optional map layers. Juncture supports 3 types of layers:
+
+- **Location layer** - A location layer contains all of the individual locations defined for a map.  Locations are defined in a list following the _ve-map_ tag.  Locations may defined with explicit geographic coordinates, a Wikidata entity ID that corresponds to a location, or an IIIF image that contains geographic coordinates in the manifest metadata.  An IIIF manifest created by Juncture will include geographic coordinates if they are found in the [Exif](https://en.wikipedia.org/wiki/Exif) metadata embedded in the source image.  Locations are displayed as map pins.  If the location is specified using a Wikidata ID and the Wikidata entity associated with the location links to a GeoJSON resource the corresponding shape may be displayed instead of the pin by including the `prefer-geojson` attribute in the list item.  By default, all locations are aggregated into a single layer.  The `layer` attribute may be used to organize locations into separate layers.
+- **GeoJSON layer** - [GeoJSON](https://en.wikipedia.org/wiki/GeoJSON) is an open standard format designed for representing simple geographical features, along with their non-spatial attributes. It is based on the JSON format.  A GeoJSON layer is added by including a URL to a GeoJSON file in the list following the _ve-map_ tag.
+- **Georeferenced image** - A georeferenced image may also be used as a map layer.  [Georeferencing](https://en.wikipedia.org/wiki/Georeferencing) is a type of coordinate transformation that binds a digital image that represents a geographic space (often a scanned map or aerial photograph) to a spatial reference system, thus locating the digital data in the real world.  One common use of a georeferenced image layer is to create an historic map overlay. Juncture supports the use of georeferenced IIIF images created by [allmaps](https://allmaps.org/).  Adding an allmaps georeferenced image to a Juncture map is accomplished by including the text `allmaps=<ALLMAPS ID>` in a list item following the _ve-map_ tag.
+
+**Layer attributes**
+
+- **allmaps** (_string_):  Allmaps ID of a georeferenced image.
+- **coords** (_string_):  Location coordinates.
+- **description** (_string_):  Location description used in a popup.
+- **disabled** (_boolean_):  Location is not displayed initially.  This attribute must be used in conjunction with the `layer` attribute.
+- **geojson** (_string_):  URL to a GeoJSON file.
+- **iiif** (_string_):  IIIF manifest URL containing geographic coordinates.
+- **image** (_string_):  Location image used in a popup thumbnail.
+- **label** (_string_):  Location label used in a popup.
+- **layer** (_string_):  Layer name to associate with the location.  Multiple locations can use the same layer name.  When a layer name is specified the layer may be hidden when the map is initially rendered by including the `disabled` attribute on one of the layer locations.
+- **marker-type** (_string_):  Type of marker to render.  Recognized values are 'circle'.
+- **prefer-geojson]** (_boolean_):  When using a Wikidata ID to define a location a GeoJSON shape may be used rather than a pin marker when available.
+- **qid** (_string_):  Wikidata entity ID of a location.
+- **zoom** (_number_):  Location zoom level when `zoom-on-click` behavior is enabled.
+
+**Geojson styling attributes**
+
+- **color** (_string_): Line color
+- **weight** (_number_): Line weight
+- **opacity** (_number_): Line opacity level (0-1)
+- **fillColor** (_string_):  Fill color
+- **fillOpacity** (_number_): Opacity level (0-1) of the fill color.
 
 #####
 
