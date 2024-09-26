@@ -505,6 +505,16 @@ The `video` tag creates a viewer that is able to play video content, including s
 
 **Tag attributes**
 
+- **src** (_url_) :  The YouTube ID or URL or a URL to the IIIF manifest for a video file to play.
+- **start** (_number_):  Time position to begin playing resource.
+- **end** (_number_): Time position to stop playing resource.
+- **caption** (_string_): Defines the text to use for a caption that is displayed below the video player.
+- **autoplay** (_boolean_):  Automatically play video resource when the media viewer is loaded.
+- **vid** (_number_): The YouTube ID of the image to stream.
+- **muted** (_boolean_):  Mute resource when initially played.
+- **poster** (_string_): Image displayed in viewer before video plays.
+- **sync** (_boolean_): Synchronize playback with timestamps in text headline.
+
 #####
 
 **Examples**
