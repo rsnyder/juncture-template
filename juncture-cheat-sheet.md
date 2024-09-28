@@ -124,14 +124,17 @@ A list of one or more images to be displayed in the carousel.  At a minimum, the
 
 <ve-snippet collapsible label="Click to view example">
 ```
-carousel navigation fit=cover
-- wc:Atrani_(Costiera_Amalfitana,_23-8-2011).jpg
-- wc:Amalfi_Coast_Italy_6.JPG
-- wc:Costiera-amalfitana-_panorama_from_the_sea_129.jpg
-- wc:Amalfi_Coast_(247891371).jpeg
-- wc:Amalfi_Coast_(Italy,_October_2020)_-_73_(50557616528).jpg
-- wc:Amalfi_Coast_(Italy,_October_2020)_-_72_(50558479917).jpg
-- wc:Amalfi_Coast_(Italy,_October_2020)_-_14_(50558382446).jpg
+carousel navigation fit=cover caption="Wikimedia Commons Picture of the Year"
+- wc:Glühwendel_brennt_durch.jpg 2013
+- wc:A_butterfly_feeding_on_the_tears_of_a_turtle_in_Ecuador.jpg 2014
+- wc:Pluto-01_Stern_03_Pluto_Color_TXT.jpg 2015
+- wc:Jubilee_and_Munin,_Ravens,_Tower_of_London_2016-04-30.jpg 2016
+- wc:Perereca-macaco_-_Phyllomedusa_rohdei.jpg 2017
+- wc:Evolution_of_a_Tornado.jpg 2018
+- wc:Mud_Cow_Racing_-_Pacu_Jawi_-_West_Sumatra,_Indonesia.jpg 2019
+- wc:Alcedo_atthis_-_Riserve_naturali_e_aree_contigue_della_fascia_fluviale_del_Po.jpg 2020
+- wc:Holy_SURP_Hovhannes_Church.jpg 2021
+- wc:Phalacrocorax_carbo,_Egretta_garzetta_and_Mareca_strepera_in_Taudha_Lake.jpg 2022
 ```
 </ve-snippet>
 
