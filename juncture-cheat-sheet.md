@@ -75,7 +75,7 @@ The `audio` tag creates a viewer that is able to play audio content.
 **Examples**
 
 <ve-snippet collapsible label="Click to view example">
-`audio wc:Interview_with_Warren_Hanson_regarding_Hundred_Flowers.ogg caption="Interview with Warren Hanson regarding Hundred Flowers"`
+`audio wc:Interview_with_Warren_Hanson_regarding_Hundred_Flowers.ogg "Interview with Warren Hanson regarding Hundred Flowers"`
  </ve-snippet>
  
 For more examples visit the [audio documentation page](https://docs.juncture-digital.org/components/audio-player).
@@ -122,9 +122,9 @@ A list of one or more images to be displayed in the carousel.  At a minimum, the
 
 **Examples**
 
-<ve-snippet collapsible label="Click to view example">
+<ve-snippet collapsible label="Basic Carousel">
 ```
-carousel navigation fit=cover caption="Wikimedia Commons Picture of the Year"
+carousel navigation caption="Wikimedia Commons Picture of the Year"
 - wc:Glühwendel_brennt_durch.jpg 2013
 - wc:A_butterfly_feeding_on_the_tears_of_a_turtle_in_Ecuador.jpg 2014
 - wc:Pluto-01_Stern_03_Pluto_Color_TXT.jpg 2015
