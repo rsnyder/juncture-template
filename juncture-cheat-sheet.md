@@ -276,12 +276,16 @@ An image definition for each carousel image follows the tag headline.  At a mini
 <ve-snippet collapsible label="Click to view example">
 ```
 gallery
-- wc:Atrani_(Costiera_Amalfitana,_23-8-2011).jpg
-- wc:Costiera-amalfitana-_panorama_from_the_sea_129.jpg
-- wc:Amalfi_Coast_(247891371).jpeg
-- wc:Amalfi_Coast_(Italy,_October_2020)_-_73_(50557616528).jpg
-- wc:Amalfi_Coast_(Italy,_October_2020)_-_72_(50558479917).jpg
-- wc:Amalfi_Coast_(Italy,_October_2020)_-_14_(50558382446).jpg
+- wc:Glühwendel_brennt_durch.jpg 2013
+- wc:A_butterfly_feeding_on_the_tears_of_a_turtle_in_Ecuador.jpg 2014
+- wc:Pluto-01_Stern_03_Pluto_Color_TXT.jpg 2015
+- wc:Jubilee_and_Munin,_Ravens,_Tower_of_London_2016-04-30.jpg 2016
+- wc:Perereca-macaco_-_Phyllomedusa_rohdei.jpg 2017
+- wc:Evolution_of_a_Tornado.jpg 2018
+- wc:Mud_Cow_Racing_-_Pacu_Jawi_-_West_Sumatra,_Indonesia.jpg 2019
+- wc:Alcedo_atthis_-_Riserve_naturali_e_aree_contigue_della_fascia_fluviale_del_Po.jpg 2020
+- wc:Holy_SURP_Hovhannes_Church.jpg 2021
+- wc:Phalacrocorax_carbo,_Egretta_garzetta_and_Mareca_strepera_in_Taudha_Lake.jpg 2022
 ```
 </ve-snippet>
 
@@ -311,6 +315,13 @@ Many of the image-specific attributes used in the ve-image viewer are based on t
 | *cover*  | The image keeps its aspect ratio and fills the the available space. The image will be clipped to fit  |
 - **no-caption** (_boolean_):  This attribute inhibits the display of the caption at the bottom of the viewer.
 - **no-info-icon** (_boolean_):  This attribute inhibits the display of the icon used to trigger the display of the information popup.  By default, the icon is displayed in the top-right region of the viewer when hovering over the viewing area.
+- **region** (_string_):  The region attribute defines the rectangular portion of the full image to be returned. The region can be specified by pixel coordinates, percentage, or by the value "full", which specifies that the entire image should be returned.
+| Form | Description |
+| -------- | ---------------------------------------- |
+| full        | The complete image is returned, without any cropping. |
+| square      | The region is defined as an area where the width and height are both equal to the length of the shorter dimension of the complete image. The region may be positioned anywhere in the longer dimension of the image content at the server’s discretion, and centered is often a reasonable default. |
+| x,y,w,h     | The region of the full image to be returned is specified in terms of absolute pixel values. The value of x represents the number of pixels from the 0 position on the horizontal axis. The value of y represents the number of pixels from the 0 position on the vertical axis. Thus the x,y position 0,0 is the upper left-most pixel of the image. w represents the width of the region and h represents the height of the region in pixels. |
+| pct:x,y,w,h | The region to be returned is specified as a sequence of percentages of the full image’s dimensions, as reported in the image information document. Thus, x represents the number of pixels from the 0 position on the horizontal axis, calculated as a percentage of the reported width. w represents the width of the region, also calculated as a percentage of the reported width. The same applies to y and h respectively. These may be floating point numbers. |
 - **rotation** (_number_):  The rotation attribute specifies mirroring and rotation. A leading exclamation mark ("!") indicates that the image should be mirrored by reflection on the vertical axis before any rotation is applied. The numerical value represents the number of degrees of clockwise rotation, and may be any floating point number from 0 to 360.
 - **zoom-on-scroll** (_boolean_):  Specifies whether the viewer will zoom the image when a scroll gesture is performed in the image viewer.  This is inhibited by default.
 
@@ -361,8 +372,48 @@ When multiple images are to be displayed an image definition for each image foll
 
 **Examples**
 
-<ve-snippet collapsible label="Click to view example">
-`image wc:Sunflower_sky_backdrop.jpg`
+<ve-snippet collapsible label="Single image using Harvard hosted IIIF image">
+ `image https://iiif.harvardartmuseums.org/manifests/object/299843`
+</ve-snippet>
+
+<ve-snippet collapsible label="Single image using Wikimedia Commons hosted IIIF image">
+ `image https://iiif.mdpress.io/https://upload.wikimedia.org/wikipedia/commons/3/37/Mud_Cow_Racing_-_Pacu_Jawi_-_West_Sumatra,_Indonesia.jpg/manifest.json`
+</ve-snippet>
+
+<ve-snippet collapsible label="Single image using Wikimedia Commons shorthand URL notation">
+ `image wc:Mud_Cow_Racing_-_Pacu_Jawi_-_West_Sumatra,_Indonesia.jpg`
+</ve-snippet>
+
+<ve-snippet collapsible label="Single image with caption override">
+ `image wc:Mud_Cow_Racing_-_Pacu_Jawi_-_West_Sumatra,_Indonesia.jpg caption="Wikimedia Commons picture of the year for 2019"`
+</ve-snippet>
+
+<ve-snippet collapsible label="Multiple images">
+```
+image
+	- wc:Glühwendel_brennt_durch.jpg
+	- wc:A_butterfly_feeding_on_the_tears_of_a_turtle_in_Ecuador.jpg
+	- wc:Pluto-01_Stern_03_Pluto_Color_TXT.jpg
+	- wc:Jubilee_and_Munin,_Ravens,_Tower_of_London_2016-04-30.jpg
+	- wc:Perereca-macaco_-_Phyllomedusa_rohdei.jpg
+	- wc:Evolution_of_a_Tornado.jpg
+	- wc:Mud_Cow_Racing_-_Pacu_Jawi_-_West_Sumatra,_Indonesia.jpg
+	- wc:Alcedo_atthis_-_Riserve_naturali_e_aree_contigue_della_fascia_fluviale_del_Po.jpg
+	- wc:Holy_SURP_Hovhannes_Church.jpg
+	- wc:Phalacrocorax_carbo,_Egretta_garzetta_and_Mareca_strepera_in_Taudha_Lake.jpg
+```
+</ve-snippet>
+
+<ve-snippet collapsible label="Image with initial zoom set using region attribute">
+	`image wc:Mud_Cow_Racing_-_Pacu_Jawi_-_West_Sumatra,_Indonesia.jpg static region=2075,516,1329,886`
+</ve-snippet>
+
+<ve-snippet collapsible label="Static image with region">
+	`image wc:Mud_Cow_Racing_-_Pacu_Jawi_-_West_Sumatra,_Indonesia.jpg region=2075,516,1329,886`
+</ve-snippet>
+
+<ve-snippet collapsible label="Static image rotated 90 degrees">
+	`image wc:Mud_Cow_Racing_-_Pacu_Jawi_-_West_Sumatra,_Indonesia.jpg rotation=90`
 </ve-snippet>
 
 For more examples visit the [image documentation page](https://docs.juncture-digital.org/components/image-viewer).
@@ -425,9 +476,41 @@ The base map can be augmented with one or more optional map layers. Juncture sup
 
 **Examples**
 
-<ve-snippet collapsible label="Click to view example">
+<ve-snippet collapsible label="Default map">
 `map`
 </ve-snippet>
+
+<ve-snippet collapsible label="Map with location">
+`map 38.914167,-77.063333,16`
+</ve-snippet>
+
+<ve-snippet collapsible label="Map with location, caption and marker">
+`map 38.914167,-77.063333,16 "Dumbarton Oaks" marker`
+</ve-snippet>
+
+<ve-snippet collapsible label="Map with QID">
+`map Q1264942,16`
+</ve-snippet>
+
+<ve-snippet collapsible label="Map with custom basemap">
+`map 38.914167,-77.063333,16 "Dumbarton Oaks" marker basemaps=Esri_WorldImagery`
+</ve-snippet>
+
+<ve-snippet collapsible label="Map with marker using IIIF image">
+```
+map Q223969,5 basemap=Esri_WorldPhysical
+	- wc:Double-O-Arch_Arches_National_Park_2.jpg
+```
+</ve-snippet>
+
+<ve-snippet collapsible label="Map with image overlay">
+```
+map 51.39257,0.50752,14
+- allmaps=911e307b5cecc423
+```
+</ve-snippet>
+
+Click on the marker or click here to see the image.
 
 For more examples visit the [map documentation page](https://docs.juncture-digital.org/components/map-viewer).
 
@@ -448,7 +531,7 @@ The `mermaid` tag uses the [mermaid.js](https://mermaid.js.org/intro/) JavaScrip
 
 **Examples**
 
-<ve-snippet collapsible label="Click to view example">
+<ve-snippet collapsible label="Mermaid mindmap">
 ```
 mermaid
 mindmap
