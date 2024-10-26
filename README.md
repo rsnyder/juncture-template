@@ -42,6 +42,7 @@ To begin using Juncture you will need a GitHub account and some basic familiarit
             <main style="visibility:hidden;">{{ content }}</main>
             <script src="https://cdn.jsdelivr.net/npm/juncture-digital/js/ghp.js" type="module"></script>
             ```
+        d. Save the file by clicking the green `Commit changes...` button.
 
 2. **Enable GitHub Pages on the repository**
     
