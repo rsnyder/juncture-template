@@ -49,7 +49,10 @@ To begin using Juncture you will need a GitHub account and some basic familiarit
 
 1. In the configured repository, create a new markdown file for the Juncture web page by selecting `Create new file` from the `Add file` pull-down menu located on the repository home page.  
 2. In the file name input field enter "sunflower/index.md"
-3. In the editor field add the text ```[![](https://v3.juncture-digital.org/images/wb.svg)](https://editor.juncture-digital.org)```
+3. In the editor field add the text 
+    ```
+    [![](https://v3.juncture-digital.org/images/wb.svg)](https://editor.juncture-digital.org)
+    ```
 4. Press the **Commit changes...** button located at the top-right of the page.
 
 #### Add Markdown text for your Juncture page
