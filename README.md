@@ -36,11 +36,11 @@ To begin using Juncture you will need a GitHub account and some basic familiarit
             ```
         3. In the editor section of the new file copy and paste the text below
             ```html
-                <!doctype html>
-                <meta name="viewport" content="width=device-width, initial-scale=1">
-                <script>window.jekyll = {site:{baseurl:'{{site.baseurl}}',github:{owner_name:'{{site.github.owner_name}}',repository_name:'{{site.github.repository_name}}',source:{branch:'{{site.github.source.branch}}'}}},page:{path:'{{page.path}}',dir:'{{page.dir}}',name:'{{page.name}}'}}</script>
-                <main style="visibility:hidden;">{{ content }}</main>
-                <script src="https://cdn.jsdelivr.net/npm/juncture-digital/js/ghp.js" type="module"></script>
+            <!doctype html>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <script>window.jekyll = {site:{baseurl:'{{site.baseurl}}',github:{owner_name:'{{site.github.owner_name}}',repository_name:'{{site.github.repository_name}}',source:{branch:'{{site.github.source.branch}}'}}},page:{path:'{{page.path}}',dir:'{{page.dir}}',name:'{{page.name}}'}}</script>
+            <main style="visibility:hidden;">{{ content }}</main>
+            <script src="https://cdn.jsdelivr.net/npm/juncture-digital/js/ghp.js" type="module"></script>
             ```
 
 2. **Enable GitHub Pages on the repository**
