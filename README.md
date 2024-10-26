@@ -8,11 +8,9 @@ A simple Juncture-generated web page can be seen [here](https://rsnyder.github.i
 
 To begin using Juncture you will need a GitHub account and some basic familiarity with Markdown.
 
-**GitHub** is a free Internet hosting service commonly used for software development projects. It provides sophisticated features for version control and workflow management for distributed teams. Juncture primarily uses GitHub as a file hosting service, similar to how one might use Dropbox or Google Drive. The Markdown files that Juncture uses to render interactive web pages are stored in GitHub.
+- *GitHub* is a free Internet hosting service commonly used for software development projects. It provides sophisticated features for version control and workflow management for distributed teams. Juncture primarily uses GitHub as a file hosting service, similar to how one might use Dropbox or Google Drive. The Markdown files that Juncture uses to render interactive web pages are stored in GitHub.  If you don't already have a GitHub account, signup for one [here](https://github.com/signup).
 
-- [Signup for a free GitHub account](https://github.com/signup)
-
-**Markdown** is a simple language and a basic understanding of usage can be obtained in just a few minutes.  The [Markdown Guide - Getting Started tutorial](https://www.markdownguide.org/getting-started) is a good place to start.
+- *Markdown* is a simple language and a basic understanding of usage can be obtained in just a few minutes.  The [Markdown Guide - Getting Started tutorial](https://www.markdownguide.org/getting-started) is a good place to start.
 
 ### Creating your first Juncture web page
 
@@ -36,7 +34,7 @@ To begin using Juncture you will need a GitHub account and some basic familiarit
             ```
             _layouts/default.html
             ```
-        3. In the editor section of the new file add the text displayed after clicking this [link](https://raw.githubusercontent.com/juncture-digital/template/main/_layouts/default.html)
+        3. In the editor section of the new file copy and paste the text displayed by this [link](https://raw.githubusercontent.com/juncture-digital/template/main/_layouts/default.html)
 
 2. **Enable GitHub Pages on the repository**
     
