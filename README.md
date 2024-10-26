@@ -26,15 +26,18 @@ To begin using Juncture you will need a GitHub account and some basic familiarit
 
     - **Option 1:  Create a new Juncture-enabled GitHub repository**
 
-        Using this link - [https://github.com/juncture-digital/template/generate](https://github.com/juncture-digital/template/generate)
+        After clicking this link - [https://github.com/juncture-digital/template/generate](https://github.com/juncture-digital/template/generate)
 
-        - Enter a Repository name (e.g,, "essays") and optional Description.
+        - Enter a Repository name (e.g,, "essays") and an optional description.
         - Press **Create Repository**
 
     - **Option 2:  Configure an existing GitHub repository**
 
         1. In the existing repository, create a Juncture template file by selecting `Create new file` from the `Add file` pull-down menu located on the repository home page.  
-        2. In the file name input field enter "_layouts/default.html".
+        2. In the file name input field enter
+            ```
+            _layouts/default.html
+            ```
         3. In the editor section of the new file add the text displayed after clicking this [link](https://raw.githubusercontent.com/juncture-digital/template/main/_layouts/default.html)
 
 2. **Enable GitHub Pages on the repository**
