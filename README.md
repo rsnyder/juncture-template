@@ -2,9 +2,9 @@
 
 # Juncture
 
-Juncture is a tool for creating and displaying interactive web pages.  Juncture web pages are created using an extended version of the [Markdown](Q1193600) language.  Markdown is a lightweight markup language that is widely used to add formatting elements to plain text.  Juncture extends Markdown with the addition of a few custom tags enabling interactive viewers to be easily added to a generated web page.  Juncture uses [GitHub](Q364) for storing the Markdown files.
+Juncture is a tool for creating and displaying interactive web pages.  Juncture web pages are created using an extended version of the Markdown language.  Markdown is a lightweight markup language that is widely used to add formatting elements to plain text.  Juncture extends Markdown with the addition of a few custom tags enabling interactive viewers to be easily added to a generated web page.  Juncture uses GitHub for storing the Markdown files.
 
-A simple Juncture-generated web page can be seen [here](https://rsnyder.github.io/juncture-template/simple-example).  This example includes a couple commonly used Juncture components.  A complete list of Juncture components and usage examples can be found on the [Juncture documentation site](https://docs.juncture-digital.org).
+A simple Juncture-generated web page can be seen [here](https://rsnyder.github.io/juncture-template/simple-example).  This example includes a couple commonly used Juncture viewer components.  A complete list of Juncture components and usage examples can be found on the [Juncture documentation site](https://docs.juncture-digital.org).
 
 ## Getting Started
 
@@ -14,11 +14,7 @@ To begin using Juncture you will need a GitHub account and some basic familiarit
 
 - [Signup for a free GitHub account](https://github.com/signup)
 
-**Markdown** is a simple language and a basic understanding of usage can be obtained in just a few minutes.  Below are some resuources for learning Markdown.
-
-- [Markdown Guide - Getting Started tutorial](https://www.markdownguide.org/getting-started)
-- [markdowntutorial.com](https://www.markdowntutorial.com)
-- [Markdown tutorial](https://www.youtube.com/watch?v=6A5EpqqDOdk)
+**Markdown** is a simple language and a basic understanding of usage can be obtained in just a few minutes.  The [Markdown Guide - Getting Started tutorial](https://www.markdownguide.org/getting-started) is a good place to start.
 
 ### Creating your first Juncture web page
 
@@ -43,7 +39,7 @@ To begin using Juncture you will need a GitHub account and some basic familiarit
 
 2. **Enable GitHub Pages on the repository**
     
-    GitHub Pages is the web-page generation service provided by GitHub.  To enable GitHub Pages, select `Pages` from the `Code and automation` section in the repository `Settings` page.  In the `Pages` form select `main*` from the `Branch` pull-down menu and press `Save`.
+    [GitHub Pages](https://pages.github.com/) is the web-page generation service provided by GitHub.  To enable GitHub Pages on a repository, select `Pages` from the `Code and automation` section in the repository `Settings` page.  In the `Pages` form select `main*` from the `Branch` pull-down menu and press `Save`.
 
 #### Create a new Markdown file to use for the Juncture essay
 
@@ -52,26 +48,13 @@ To begin using Juncture you will need a GitHub account and some basic familiarit
 3. In the editor field add the text 
     ```
     [![](https://v3.juncture-digital.org/images/wb.svg)](https://editor.juncture-digital.org)
+
+    # Common Sunflower
+
+    `image wc:Sunflower_sky_backdrop.jpg .right`
+
+    The [common sunflower](Q171497) is a species of large annual forb of the daisy family Asteraceae. The common sunflower is harvested for its edible oily seeds which are used in the production of cooking oil.
     ```
 4. Press the **Commit changes...** button located at the top-right of the page.
 
-#### Add Markdown text for your Juncture page
-
-At this point you should have a new repository with a `index.md` file located in a folder named `sunflower`.
-
-To add Juncture-augmented Markdown text for the generated web page you may continue to use the GitHub editor or use the Juncture editor.  The Juncture editor is recommended as it provides syntax-highlighting, a preview toggle for rapidly making and viewing changes.  The instructions in this Getting Started guide assume the Juncture editor is being used.
-
-To access the editor, press the two-toned "Juncture Workbench" button now displayed at the top of the Markdown file when viewing from the GitHub site.  The first time the Juncture editor is used you'll be asked to authorize Juncture to access your repository.
-
-Append the following text to your `sunflower/README.md` file, leaving a blank line after the button text added in the previous step.
-
-```
-# Common Sunflower
-
-`image wc:Sunflower_sky_backdrop.jpg .right`
-
-The [common sunflower](Q171497) is a species of large annual forb of the daisy family Asteraceae. The common sunflower is harvested for its edible oily seeds which are used in the production of cooking oil.
-```
-	
-After adding the new text, press the preview button (the eye icon) located in the editor toolbar to view the rendered web page.
-
+5. To view the web page use the URL https://`<GitHub username>`.github.io/`<Github repository>`/sunflower, where `<GitHub username>` is replaced with your GitHub username and `<Github repository>` is replaced with the name of the Juncture-enabled repository containing the `sunflower/index.md` Markdown file.
