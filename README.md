@@ -1,10 +1,8 @@
-[![](https://v3.juncture-digital.org/images/wb.svg)](https://v3.juncture-digital.org/wb)
-
 # Juncture
 
 Juncture is a tool for creating and displaying interactive web pages.  Juncture web pages are created using an extended version of the Markdown language.  Markdown is a lightweight markup language that is widely used to add formatting elements to plain text.  Juncture extends Markdown with the addition of a few custom tags enabling interactive viewers to be easily added to a generated web page.  Juncture uses GitHub for storing the Markdown files.
 
-A simple Juncture-generated web page can be seen [here](https://rsnyder.github.io/juncture-template/simple-example).  This example includes a couple commonly used Juncture viewer components.  A complete list of Juncture components and usage examples can be found on the [Juncture documentation site](https://docs.juncture-digital.org).
+A simple Juncture-generated web page can be seen [here](https://rsnyder.github.io/juncture-template/simple-example).  This example includes a couple commonly used Juncture viewer tags.  A complete list of Juncture tags and usage examples can be found on the [Juncture documentation site](https://docs.juncture-digital.org).
 
 ## Getting Started
 
@@ -44,7 +42,7 @@ To begin using Juncture you will need a GitHub account and some basic familiarit
     
     [GitHub Pages](https://pages.github.com/) is the web-page generation service provided by GitHub.  To enable GitHub Pages on a repository, select `Pages` from the `Code and automation` section in the repository `Settings` page.  In the `Pages` form select `main*` from the `Branch` pull-down menu and press `Save`.
 
-#### Create a new Markdown file to use for the Juncture essay
+#### Create a new Markdown file to use for the generating the web page
 
 1. In the configured repository, create a new markdown file for the Juncture web page by selecting `Create new file` from the `Add file` pull-down menu located on the repository home page.  
 2. In the file name input field enter "sunflower/index.md"
